@@ -15,5 +15,9 @@ namespace Veterinaria.Data
         }
 
         public DbSet<Veterinaria.Models.Cliente> Cliente { get; set; } = default!;
+
+        public DbSet<Veterinaria.Models.Citas>? Citas { get; set; }
+
+        public DbSet<Veterinaria.Models.Mascota>? Mascota { get; set; }
     }
 }
